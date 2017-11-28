@@ -1,12 +1,8 @@
 package com.framework.utils;
 
 
-
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.InputStreamReader;
-import java.net.URL;
-import java.net.URLDecoder;
+import java.io.*;
+import java.net.*;
 import java.util.ArrayList;
 
 import org.testng.Assert;

@@ -2,8 +2,8 @@ package com.framework.dp;
 
 import org.testng.annotations.DataProvider;
 
-import com.framework.utils.CSVReader;
-import com.framework.utils.ExcelReader;
+import com.framework.utils.*;
+
 
 public class SearchDataProvider {
 

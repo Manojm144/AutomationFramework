@@ -2,28 +2,12 @@ package com.framework.reporting;
 
 import java.awt.TrayIcon.MessageType;
 import java.io.IOException;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
-
-import org.testng.IReporter;
-import org.testng.IResultMap;
-import org.testng.ISuite;
-import org.testng.ISuiteResult;
-import org.testng.ITestContext;
-import org.testng.ITestResult;
-import org.testng.Reporter;
+import java.util.*;
+import org.testng.*;
 import org.testng.xml.XmlSuite;
-
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.MediaEntityBuilder;
-import com.aventstack.extentreports.MediaEntityModelProvider;
-import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.*;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-import com.aventstack.extentreports.reporter.configuration.ChartLocation;
-import com.aventstack.extentreports.reporter.configuration.Theme;
+import com.aventstack.extentreports.reporter.configuration.*;
 import com.framework.utils.Message;
 
 public class ExtentTestNGIReporterListener implements IReporter {
@@ -35,7 +19,7 @@ public class ExtentTestNGIReporterListener implements IReporter {
     private ExtentReports extent;
 
     public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory){
-    //public void generateReport(List xmlSuites, List suites, String outputDirectory) {
+    
         init();
         
         for (ISuite suite : suites) {

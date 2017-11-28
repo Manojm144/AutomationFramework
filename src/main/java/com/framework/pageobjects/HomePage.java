@@ -1,24 +1,18 @@
-/**
- * 
- */
+
 package com.framework.pageobjects;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
+
+import org.openqa.selenium.*;
+
+import org.openqa.selenium.support.*;
 
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.model.ScreenCapture;
 import com.framework.core.BasePage;
-import com.framework.utils.Log;
-import com.framework.utils.Message;
-import com.framework.utils.ScreenshotUtils;
+import com.framework.utils.*;
 
-/**
- * @author manoj
- *
- */
+
+
 public class HomePage extends BasePage{
 	
 	public HomePage(WebDriver driver){

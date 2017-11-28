@@ -1,11 +1,7 @@
 package com.framework.utils;
 
 import java.io.IOException;
-
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.CellType;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -36,14 +32,6 @@ public class ExcelReader {
 					Cell c = row.getCell(j);
 					data[i-firstRow][j] = getCellValue(c);
 				}
-				
-//				Double tcNo = row.getCell(0).getNumericCellValue();
-//				String productName = row.getCell(1).getStringCellValue();
-//				Double expCount = row.getCell(2).getNumericCellValue();
-//				data[i-firstRow][0] = tcNo;
-//				data[i-firstRow][1] = productName;
-//				data[i-firstRow][2] = expCount;
-				//System.out.println(tcNo+"\t"+productName+"\t"+expCount);
 				
 			}
 			workbook.close();

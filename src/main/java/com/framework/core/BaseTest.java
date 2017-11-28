@@ -3,22 +3,13 @@ package com.framework.core;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Paths;
-
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.*;
 
 import com.framework.driverfactory.BrowserFactoryUtil;
 import com.framework.utils.ScreenshotUtils;
-import com.google.common.io.Files;
-import com.google.common.io.MoreFiles;
-import com.google.common.io.RecursiveDeleteOption;
+import com.google.common.io.*;
 
 public class BaseTest {
 
